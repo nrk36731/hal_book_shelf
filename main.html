@@ -1,0 +1,259 @@
+<html>
+<head>
+    <title>HomePage</title>
+    <style>
+        body{
+            background-image:url("f:/Data/PROGRAM/HAL/Book Store/images/cover.jpg");
+background-size :cover;
+
+
+        }
+        h1{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+            color: aliceblue;
+
+
+        }
+        .hd{
+            background:rgba(255,91,96,0.4);
+            height:80px ;
+            text-align:center;
+            
+box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        .cat
+        { align-content: center;
+            position: absolute;
+           top: 120px;
+            width: 200px;
+               height: 490px;
+           background-color: rgba(255,91,96,0.4);
+           color: white;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul
+{ 
+	margin: 0; 
+	padding: 0; 
+	box-shadow: 0 15px 40px rgba(0,0,0,0.7); 
+} 
+a{
+    color: antiquewhite;
+}
+ul li 
+{ 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    	position: relative; 
+	list-style: none; 
+	font-size:18px; 
+	padding: 10px; 
+	color: white; 
+	transition: 0.5s; 
+	cursor: pointer; 
+	 
+	border-bottom: 1px solid rgba(88, 16, 16, 0.2); 
+
+} 
+ul li:hover{
+    color:violet; 
+}
+ul li:before 
+{ 
+	content: ''; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background:pink; 
+	z-index: -1; 
+	transform: scaleY(0); 
+	transition: transform 0.5s; 
+	transform-origin: bottom; 
+} 
+ul li:hover:before 
+{ 
+	transform: scaleY(1); 
+	transition: transform 0.5s; 
+	transform-origin: top; 
+} 
+ul li:after 
+{ 
+	content: ''; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background:red; 
+	z-index: -2; 
+	transform: scaleY(0); 
+	transition: transform 0.5s; 
+	transform-origin: bottom; 
+	filter: blur(40px); 
+} 
+ul li:hover:after 
+{ 
+	transform: scaleY(1); 
+	transition: transform 0.5s; 
+	transform-origin: top; 
+}
+.container 
+{   position:absolute;
+	width: 600px; 
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+	display: flex; 
+    flex-direction:row;
+	flex-wrap: wrap; 
+	justify-content: space-between; 
+} 
+h4
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    
+}
+.box 
+{   font-size: 13px;
+	position: relative; 
+	width: 180px; 
+	height:180px; 
+	background: #000; 
+	box-shadow: 0 30px 30px rgba(0,0,0,.5); 
+} 
+.box .imgBx 
+{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+} 
+.box .imgBx img 
+{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover; 
+	transition: 0.5s; 
+} 
+.box:hover .imgBx img 
+{ 
+	opacity: 0; 
+} 
+.box .content 
+{ 
+	position: absolute; 
+	bottom: 20px; 
+	left: 10%; 
+	width: 80%; 
+	height: 60px; 
+	background: #fff; 
+	transition: 0.5s; 
+	overflow: hidden; 
+ 
+	padding: 6px; 
+	box-sizing: border-box; 
+} 
+.box:hover .content 
+{ 
+	width: 100%; 
+	height: 100%; 
+	bottom: 0; 
+	left: 0; 
+} 
+.box .content h3 
+{ 
+	margin: 0; 
+	padding: 0; 
+	font-size: 20px; 
+} 
+.box .content p 
+{ 
+	margin: 10px 0 0; 
+	padding: 0; 
+	opacity: 0; 
+	line-height: 1.2em; 
+	transition: 0.5s; 
+	text-align: justify; 
+} 
+.box:hover .content p 
+{ 
+	opacity: 1; 
+	transition-delay: 0.5s; 
+}
+h2{text-align: center;}
+
+    </style>
+    </head>
+    <body>
+       
+        <div class="hd">
+           <h1> The Book Store</h1>
+        <div="logo"></div>
+        </div>
+        <div class="cat">
+            <h2>Categories</h2>
+            <ul class="l">
+<li><div><a href="Arch.html">Architecture</a> </div></li>
+<li><div><a href="Arts.html">Arts</a> </div></li>
+<li><div><a href="Bio.html">Biographies</a> </div></li>
+<li><div><a href="Comp&i.html">Computer & Internet</a> </div></li>
+<li><div><a href="fic.html">Fiction</a> </div></li>
+<li><div><a href="geo.html">Geopraphy</a> </div></li>
+<li><div><a href="hss.html">History & Social Science</a> </div></li>
+<li><div><a href="Lit.html">Litratures</a> </div></li>
+<li><div><a href="myth.html">Mythology</a> </div></li>
+<li><div><a href="Novels.html">Novels</a> </div></li>
+
+</ul>
+
+            </div>
+
+            <div class="container"> 
+                    <div class="box"> 
+                        <div class="imgBx"> 
+                            <img src="img1.jpg"> 
+                        </div> 
+                        <div class="content"> 
+                            <h4>Coupon Code="Summer"</h4> 
+                            <p>Get 45% off using Coupon code Summer on Fictions</p> 
+                        </div> 
+                    </div> 
+                    <div class="box"> 
+                        <div class="imgBx"> 
+                            <img src="img2.jpg"> 
+                        </div> 
+                        <div class="content"> 
+                            <h4>Coupon Code="Travel"</h4> 
+                            <p>Get 40% off using Coupon code on Novels</p> 
+                        </div> 
+                    </div> 
+                    <div class="box"> 
+                        <div class="imgBx"> 
+                            <img src="img3.jpg"> 
+                        </div> 
+                        <div class="content"> 
+                            <h4>Coupon Code="Scholar"</h4> 
+                            <p>Get 35% off using Coupon code Scholar on Litratures</p> 
+                        </div> 
+                        
+                    </div> 
+                   
+                </div>
+
+                
+                
+
+
+
+
+    </body>
+
+
+</html>
